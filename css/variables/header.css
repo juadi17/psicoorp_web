@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/* Header */
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+header div.header-container {
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Logo: ocupa 1/4 parte del heder en la versión mobile
+  *  Se modifica por el logo 1 en las versiones de tablet y desktop*/
+  /* El navIcon solo se usa en las versionaes mobile junto con el navVertical */
+}
+@media (min-width: 640px) {
+  header div.header-container {
+    padding: 16px 64px;
+  }
+}
+header div.header-container .logo-container {
+  width: 25%;
+  max-width: 48px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 640px) {
+  header div.header-container .logo-container {
+    max-width: 250px;
+  }
+}
+header div.header-container .logo-container img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 640px) {
+  header div.header-container #logo-small {
+    display: none;
+  }
+}
+header div.header-container #logo-large {
+  display: none;
+}
+@media (min-width: 640px) {
+  header div.header-container #logo-large {
+    display: block;
+  }
+}
+header div.header-container div.navIcon {
+  width: 25%;
+  max-width: 48px;
+  min-width: 40px;
+  display: grid;
+  grid-tamplate-rows: 1fr 1fr 1fr;
+  gap: 8px;
+  cursor: pointer;
+}
+@media (min-width: 640px) {
+  header div.header-container div.navIcon {
+    display: none;
+  }
+}
+header div.header-container div.navIcon div.navLine {
+  width: 100%;
+  height: 8px;
+  background-color: #3bc08e;
+}
+header div.header-container nav.navHorizontal {
+  display: none;
+}
+@media (min-width: 640px) {
+  header div.header-container nav.navHorizontal {
+    display: block;
+  }
+}
+header div.header-container nav.navVertical {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: -100%;
+  background-color: #e7e7e6;
+  transition: 2s all ease;
+}
+@media (min-width: 640px) {
+  header div.header-container nav.navVertical {
+    display: none;
+  }
+}
+header div.header-container nav.navVerticalShow {
+  right: 0%;
+  transition: 2s all ease;
+}
+header div.header-container nav.navMenu ul {
+  margin: 0;
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+header div.header-container nav.navMenu ul li {
+  list-style: none;
+  width: auto;
+  height: auto;
+  display: flex;
+}
+header div.header-container nav.navMenu ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #575856;
+  padding: 16px 0 16px 16px;
+}
+@media (min-width: 640px) {
+  header div.header-container nav.navMenu ul {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 16px;
+  }
+}
+header div.header-container li.close {
+  width: 100% !important;
+  padding-bottom: 64px;
+  margin-bottom: 64px;
+  border-bottom: #b0b1af solid 1px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  cursor: pointer;
+}
+header div.header-container li.close div.cl-1, header div.header-container li.close div.cl-2 {
+  background-color: #3bc08e;
+  width: 32px;
+  height: 8px;
+  position: absolute;
+}/*# sourceMappingURL=header.css.map */
