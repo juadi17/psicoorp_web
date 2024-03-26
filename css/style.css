@@ -671,7 +671,8 @@ img {
     font-size: calc(2.5rem + 4vw);
   }
 }
-.cardTitle .cardbody p {
+
+.cardbody p {
   margin: 0;
 }
 
@@ -719,7 +720,7 @@ img {
   }
   .subcard .subcard-container .cardHeader .cardTitle {
     padding-top: 0;
-    line-height: 0;
+    line-height: 0.5;
   }
 }
 
