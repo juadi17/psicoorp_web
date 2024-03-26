@@ -709,7 +709,17 @@ img {
 }
 @media (min-width: 940px) {
   .subcard .subcard-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     width: calc(50% - 16px);
+  }
+  .subcard .subcard-container .cardHeader {
+    padding-top: 0;
+  }
+  .subcard .subcard-container .cardHeader .cardTitle {
+    padding-top: 0;
+    line-height: 0;
   }
 }
 
