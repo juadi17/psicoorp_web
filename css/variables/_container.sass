@@ -104,10 +104,13 @@ img
         max-width:1200px
         display: flex
         margin-bottom: 64px
+        gap: 32px
     .cardImg
         width: 100%
         height: 256px
         display: block
+        @media (min-width: 940px)
+            width: calc(50% - 16px)
     .cardHeader
         padding: 16px 0
         .cardTitle
@@ -118,6 +121,8 @@ img
             margin-top: 32px
 
     .subcard-container
+        @media (min-width: 940px)
+            width: calc(50% - 16px)
 
 
 
@@ -152,3 +157,4 @@ img
         display: flex
         flex-direction: column
         align-items: center
+        @media (min-width: 940px)

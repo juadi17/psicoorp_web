@@ -684,12 +684,18 @@ img {
     max-width: 1200px;
     display: flex;
     margin-bottom: 64px;
+    gap: 32px;
   }
 }
 .subcard .cardImg {
   width: 100%;
   height: 256px;
   display: block;
+}
+@media (min-width: 940px) {
+  .subcard .cardImg {
+    width: calc(50% - 16px);
+  }
 }
 .subcard .cardHeader {
   padding: 16px 0;
@@ -701,6 +707,12 @@ img {
 .subcard .cardFooter .button {
   margin-top: 32px;
 }
+@media (min-width: 940px) {
+  .subcard .subcard-container {
+    width: calc(50% - 16px);
+  }
+}
+
 .aboutUsCard {
   height: 100%;
   display: flex;
@@ -732,7 +744,6 @@ img {
   flex-direction: column;
   align-items: center;
 }
-
 /* Gradientes */
 .bg-gradient-1 {
   background: linear-gradient(225deg, #79dcb4 0%, #128963 100%);
