@@ -321,6 +321,10 @@ template {
   background: linear-gradient(225deg, #79dcb4 0%, #128963 100%);
 }
 
+.bg-50 {
+  background-color: #eefbf5;
+}
+
 @keyframes loadingImg {
   0% {
     background-position: 0% 0%;
@@ -343,9 +347,17 @@ template {
   background: linear-gradient(225deg, #79dcb4 0%, #128963 100%);
 }
 
+.bg-50 {
+  background-color: #eefbf5;
+}
+
 /* Gradientes */
 .bg-gradient-1 {
   background: linear-gradient(225deg, #79dcb4 0%, #128963 100%);
+}
+
+.bg-50 {
+  background-color: #eefbf5;
 }
 
 @keyframes loadingImg {
@@ -505,9 +517,17 @@ header div.header-container li.close div.cl-1, header div.header-container li.cl
   background: linear-gradient(225deg, #79dcb4 0%, #128963 100%);
 }
 
+.bg-50 {
+  background-color: #eefbf5;
+}
+
 /* Gradientes */
 .bg-gradient-1 {
   background: linear-gradient(225deg, #79dcb4 0%, #128963 100%);
+}
+
+.bg-50 {
+  background-color: #eefbf5;
 }
 
 @keyframes loadingImg {
@@ -660,14 +680,28 @@ img {
   max-height: 500px;
 }
 
-/* Gradientes */
-.bg-gradient-1 {
-  background: linear-gradient(225deg, #79dcb4 0%, #128963 100%);
+.services {
+  width: 100%;
+  max-width: 1200px;
+  padding: 64px 0;
 }
 
 /* Gradientes */
 .bg-gradient-1 {
   background: linear-gradient(225deg, #79dcb4 0%, #128963 100%);
+}
+
+.bg-50 {
+  background-color: #eefbf5;
+}
+
+/* Gradientes */
+.bg-gradient-1 {
+  background: linear-gradient(225deg, #79dcb4 0%, #128963 100%);
+}
+
+.bg-50 {
+  background-color: #eefbf5;
 }
 
 @keyframes loadingImg {
