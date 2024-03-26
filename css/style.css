@@ -706,6 +706,11 @@ img {
   padding-top: 16px;
   font-size: calc(1rem + 3vw);
 }
+@media (min-width: 940px) {
+  .subcard .cardHeader .cardTitle {
+    font-size: calc(1rem + 2vw);
+  }
+}
 .subcard .cardFooter .button {
   margin-top: 32px;
 }
