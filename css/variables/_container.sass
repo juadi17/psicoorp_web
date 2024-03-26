@@ -99,12 +99,14 @@ img
 
 .subcard
     max-width: 480px
+    .cardImg
+        width: 100%
+        height: 256px
+        display: block
+        @media (min-width: 940px)
+            display: grid
     .cardHeader
         padding: 16px 0
-        .cardImg
-            width: 100%
-            height: 256px
-            display: block
         .cardTitle
             padding-top: 16px
             font-size: calc(1rem + 3vw)
