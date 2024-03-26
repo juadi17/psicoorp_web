@@ -69,30 +69,49 @@ img
     @media (min-width: 940px)
         flex-direction: row
         gap: 32px
-    .cardImg
-        width: 100%
-        height: 100vw
-        background: linear-gradient(225deg, rgba($primary-300,0.3), rgba($primary-600,0.5))
-        background-size: 400% 100%
-        animation: loadingImg 3s ease infinite
+.cardImg
+    width: 100%
+    height: 100vw
+    background: linear-gradient(225deg, rgba($primary-300,0.3), rgba($primary-600,0.5))
+    background-size: 400% 100%
+    animation: loadingImg 3s ease infinite
+    @media (min-width: 940px)
+        width: calc(50% - 16px)
+.card
+    grid-column: 4
+    @media (min-width: 940px)
+        width: calc(50% - 16px)
+    .cardHeader
+        padding-top: 64px
+        padding-bottom: 32px
+        color: $black
         @media (min-width: 940px)
-            width: calc(50% - 16px)
-    .card
-        grid-column: 4
-        @media (min-width: 940px)
-            width: calc(50% - 16px)
-        .cardHeader
-            padding-top: 64px
-            padding-bottom: 32px
-            color: $black
+            padding-top: 0px
+        .cardTitle
+            font-size: calc(2.5rem + 3vw)
+            @media (min-width: 640px)
+                font-size: calc(2.5rem + 6vw)
             @media (min-width: 940px)
-                padding-top: 0px
-            .cardTitle
-                font-size: calc(2.5rem + 3vw)
-                @media (min-width: 640px)
-                    font-size: calc(2.5rem + 6vw)
-                @media (min-width: 940px)
-                    font-size: calc(2.5rem + 4vw)
+                font-size: calc(2.5rem + 4vw)
+    .cardbody
+        p
+            margin: 0
+
+.subcard
+    max-width: 480px
+    .cardHeader
+        padding: 16px 0
+        .cardImg
+            width: 100%
+            height: 256px
+            display: block
+        .cardTitle
+            padding-top: 16px
+            font-size: calc(1rem + 3vw)
+    .cardFooter
+        .button
+            margin-top: 32px
+
 
         
 
@@ -113,3 +132,8 @@ img
     width: 100% 
     max-width: 1200px
     padding: 64px 0
+    .card
+        .cardbody
+            display: flex
+            flex-direction: column
+            align-items: center

@@ -624,7 +624,8 @@ img {
     gap: 32px;
   }
 }
-.cardContainer .cardImg {
+
+.cardImg {
   width: 100%;
   height: 100vw;
   background: linear-gradient(225deg, rgba(121, 220, 180, 0.3), rgba(18, 137, 99, 0.5));
@@ -632,40 +633,63 @@ img {
   animation: loadingImg 3s ease infinite;
 }
 @media (min-width: 940px) {
-  .cardContainer .cardImg {
+  .cardImg {
     width: calc(50% - 16px);
   }
 }
-.cardContainer .card {
+
+.card {
   grid-column: 4;
 }
 @media (min-width: 940px) {
-  .cardContainer .card {
+  .card {
     width: calc(50% - 16px);
   }
 }
-.cardContainer .card .cardHeader {
+.card .cardHeader {
   padding-top: 64px;
   padding-bottom: 32px;
   color: #0f151b;
 }
 @media (min-width: 940px) {
-  .cardContainer .card .cardHeader {
+  .card .cardHeader {
     padding-top: 0px;
   }
 }
-.cardContainer .card .cardHeader .cardTitle {
+.card .cardHeader .cardTitle {
   font-size: calc(2.5rem + 3vw);
 }
 @media (min-width: 640px) {
-  .cardContainer .card .cardHeader .cardTitle {
+  .card .cardHeader .cardTitle {
     font-size: calc(2.5rem + 6vw);
   }
 }
 @media (min-width: 940px) {
-  .cardContainer .card .cardHeader .cardTitle {
+  .card .cardHeader .cardTitle {
     font-size: calc(2.5rem + 4vw);
   }
+}
+.card .cardbody p {
+  margin: 0;
+}
+
+.subcard {
+  max-width: 480px;
+}
+.subcard .cardHeader {
+  padding: 16px 0;
+}
+.subcard .cardHeader .cardImg {
+  width: 100%;
+  height: 256px;
+  display: block;
+}
+.subcard .cardHeader .cardTitle {
+  padding-top: 16px;
+  font-size: calc(1rem + 3vw);
+}
+.subcard .cardFooter .button {
+  margin-top: 32px;
 }
 
 .aboutUsCard {
@@ -684,6 +708,11 @@ img {
   width: 100%;
   max-width: 1200px;
   padding: 64px 0;
+}
+.services .card .cardbody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Gradientes */
