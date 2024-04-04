@@ -2,24 +2,180 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/style.css?V2">
     <title>Grupo Psicoorp sas</title>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <img src="" alt="" class="logo">
-            <nav>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="img//Grupo_psicoorp_logo-01.svg" alt="" class="logo" id="logo-large">
+                <img src="img//Grupo_psicoorp_logo-02.svg" alt="" class="logo" id="logo-small">
+            </div>
+            <div class="navIcon">
+                <div class="navLine"></div>
+                <div class="navLine"></div>
+                <div class="navLine"></div>
+            </div>
+            <nav class="navMenu navHorizontal">
                 <ul>
                     <li><a href="">Inicio</a></li>
                     <li><a href="">Servicios</a></li>
                     <li><a href="">Contacto</a></li>
                 </ul>
             </nav>
-        </header>
-    </div>
-    <section class="services">
-
+            <nav class="navMenu navVertical">
+                <ul>
+                    <li class="close">
+                        <div class="cl-1"></div>
+                        <div class="cl-2"></div>
+                    </li>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Servicios</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="banner-container bg-gradient-1">
+        <p>Gestionamos la atención</p>
+        <p>en Salud Mental</p>
     </section>
+    <span class="spaceDivider"></span>
+    <div class="container">
+        <section class="cardContainer">
+            <div class="img-container cardImg aboutUsImg imgDeco">
+                <img src="" alt="">
+            </div>
+            <div class="aboutUsCard card">
+                <div class="cardHeader">
+                    <div class="cardTitle">Nosotros</div>
+                </div>
+                <div class="cardbody">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est expedita ipsa natus? Numquam quia iure repudiandae ipsum libero consectetur est reiciendis quibusdam eius architecto possimus in, blanditiis similique tenetur cum!
+                    Alias, odio officia? Autem illum similique, velit maiores architecto sunt voluptatum molestias distinctio tempore sequi suscipit dolorem aliquam ad possimus in perferendis excepturi quia voluptates numquam minus perspiciatis reprehenderit ipsa!</p>
+                </div>
+                <div class="cardFooter">
+                    <button type="button" class="button btn-primary">Leer más</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <span class="spaceDivider"></span>
+    <div class="container bg-50">
+        <section class="services">
+            <div class="servicescard">
+                <div class="cardHeader">
+                    <div class="cardTitle">Servicios</div>
+                </div>
+                <div class="cardbody">
+                
+                    <div class="card subcard">
+                        <div class="cardImg">
+                            <img src="" alt="">
+                        </div>
+                        <div class="subcard-container">
+                            <div class="cardHeader">
+                                <div class="cardTitle">El Psicotaller</div>
+                            </div>
+                            <div class="cardbody">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est expedita ipsa natus? Numquam quia iure repudiandae ipsum libero consectetur est reiciendis quibusdam eius architecto possimus in, blanditiis similique tenetur cum!</p>
+                            </div>
+                            <div class="cardFooter">
+                                <button type="button" class="button btn-primary">Leer más</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card subcard">
+                        <div class="cardImg">
+                            <img src="" alt="">
+                        </div>
+                        <div class="subcard-container">
+                            <div class="cardHeader">
+                                <div class="cardTitle">Redsico</div>
+                            </div>
+                            <div class="cardbody">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est expedita ipsa natus? Numquam quia iure repudiandae ipsum libero consectetur est reiciendis quibusdam eius architecto possimus in, blanditiis similique tenetur cum!</p>
+                            </div>
+                            <div class="cardFooter">
+                                <button type="button" class="button btn-primary">Leer más</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card subcard">
+                        <div class="cardImg">
+                            <img src="" alt="">
+                        </div>
+                        <div class="subcard-container">
+                            <div class="cardHeader">
+                                <div class="cardTitle">Para empresas</div>
+                            </div>
+                            <div class="cardbody">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est expedita ipsa natus? Numquam quia iure repudiandae ipsum libero consectetur est reiciendis quibusdam eius architecto possimus in, blanditiis similique tenetur cum!</p>
+                            </div>
+                            <div class="cardFooter">
+                                <button type="button" class="button btn-primary">Leer más</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="cardFooter">
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <span class="spaceDivider"></span>
+    <div class="container">
+        <section class="contact">
+            <div class="contactForm card">
+                <div class="cardHeader">
+                    <div class="cardTitle">Contacto</div>
+                </div>
+                <div class="cardbody">
+                    <form action="">
+                        <div class="componentForm">
+                            <label for="">Nombre</label>
+                            <input type="text">
+                        </div>
+                        <div class="componentForm">
+                            <label for="">Correo</label>
+                            <input type="email">
+                        </div>
+                        <div class="componentForm">
+                            <label for="">Mensaje</label>
+                            <input type="text">
+                        </div>
+                        <button type="submit" class="button btn-submit">Enviar</button>
+                    </form>
+                </div>
+                <div class="cardFooter">
+                </div>
+            </div>
+            <div class="contactInfoContainer bg-400">
+                <div class="contactInfo">
+                    <p>grupopsicosas@gmail.com</p>
+                    <p>+57 319 562 1814</p>
+                    <p>Calle 49b # 64b - 96 <br> Suramericana, Med - Col.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <span class="spaceDivider"></span>
+    <footer class="bg-400">
+        <div class="logo-container">
+            <img src="img//Grupo_psicoorp_logo-03.svg" alt="" class="logo" id="logo-large">
+        </div>
+        <div class="footerLinks">
+            <a href="" class="light">Información legal</a>
+            <a href="" class="light">Políticas de privacidad</a>
+        </div>
+
+    </footer>
 </body>
 </html>

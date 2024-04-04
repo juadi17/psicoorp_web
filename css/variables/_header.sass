@@ -1,0 +1,118 @@
+@import colors
+@import animations
+
+/* Header */
+header
+    width: 100%
+    height: 100px
+    background-color: $white
+    display: flex
+    justify-content: center
+    div.header-container
+        width: 100%
+        height: 100%
+        max-width: 1200px
+        padding: 16px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        @media (min-width: 640px)
+            padding: 16px 64px
+        // @media (min-width: 960px)
+
+
+        /* Logo: ocupa 1/4 parte del heder en la versión mobile
+            Se modifica por el logo 1 en las versiones de tablet y desktop*/
+        .logo-container
+            width: 25%
+            max-width: 48px
+            min-width: 40px
+            display: flex
+            align-items: center
+            @media (min-width: 640px)
+                max-width: 250px
+        
+        #logo-small
+            @media (min-width: 640px)
+                display: none
+        
+        #logo-large
+            display: none
+            @media (min-width: 640px)
+                display: block
+
+        /* El navIcon solo se usa en las versionaes mobile junto con el navVertical */
+        div.navIcon
+            width: 25%
+            max-width: 48px
+            min-width: 40px
+            display: grid
+            grid-tamplate-rows: 1fr 1fr 1fr
+            gap: 8px
+            cursor: pointer
+            @media (min-width: 640px)
+                display: none
+            div.navLine
+                width: 100%
+                height: 8px
+                background-color: $primary-400
+        
+        nav.navHorizontal
+            display: none
+            @media (min-width: 640px)
+                display: block
+
+        nav.navVertical
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            bottom: 0
+            right: -100%
+            background-color: $gray-3
+            transition: $transform-1
+            @media (min-width: 640px)
+                display: none
+        
+        nav.navVerticalShow
+            right: 0%
+            transition: $transform-1
+
+        nav.navMenu
+            ul
+                margin: 0
+                padding: 64px
+                display: flex
+                flex-direction: column
+                align-items: flex-end
+                li
+                    list-style: none
+                    width: auto
+                    height: auto
+                    display: flex
+                    a
+                        text-decoration: none
+                        font-size: 18px
+                        color: $gray-1
+                        padding: 16px 0 16px 16px
+            @media (min-width: 640px)
+                ul
+                    padding: 0
+                    display: flex
+                    flex-direction: row
+                    justify-content: flex-end
+                    gap: 16px
+        li.close
+            width: 100% !important
+            padding-bottom: 64px
+            margin-bottom: 64px
+            border-bottom: $gray-2 solid 1px
+            display: flex
+            justify-content: flex-end
+            position: relative
+            cursor: pointer
+            div.cl-1, div.cl-2
+                background-color: $primary-400
+                width: 32px
+                height: 8px
+                position: absolute
