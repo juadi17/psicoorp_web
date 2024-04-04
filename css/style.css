@@ -518,6 +518,12 @@ header div.header-container li.close div.cl-1, header div.header-container li.cl
   height: 8px;
   position: absolute;
 }
+header div.header-container li.close div.cl-1 {
+  transform: rotate(45deg) translate(4px, -6px);
+}
+header div.header-container li.close div.cl-2 {
+  transform: rotate(-45deg) translate(6px, 4px);
+}
 
 .bg-gradient-1 {
   background: linear-gradient(225deg, #79dcb4 0%, #128963 100%);
