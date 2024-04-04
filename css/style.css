@@ -850,7 +850,28 @@ main {
     font-size: calc(2.5rem + 4vw);
   }
 }
-
+.articleHeader .excerpt {
+  padding: 0 5%;
+  margin-bottom: 32px;
+  text-align: center;
+}
+@media (min-width: 640px) {
+  .articleHeader .excerpt {
+    padding: 0 10%;
+  }
+}
+@media (min-width: 940px) {
+  .articleHeader .excerpt {
+    padding: 0 20%;
+  }
+}
+.articleHeader .excerpt em {
+  text-align: center;
+}
+article strong {
+  color: #0f151b;
+  font-weight: 700;
+}
 .bg-gradient-1 {
   background: linear-gradient(225deg, #79dcb4 0%, #128963 100%);
 }
