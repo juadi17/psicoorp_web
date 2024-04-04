@@ -169,3 +169,32 @@ img
         flex-direction: column
         align-items: center
         @media (min-width: 940px)
+
+// Contact
+
+.contact
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    gap: 32px
+    .contactForm 
+        width: 100%
+        margin-bottom: 128px
+        display: flex
+        flex-direction: column
+        @media (min-width: 940px)
+            width: calc(50% - 16px)
+            margin-bottom: 0
+    .contactInfoContainer
+        width: 100%
+        padding: 32px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        color: $white
+        @media (min-width: 640px)
+            padding: 64px
+        @media (min-width: 940px)
+            width: calc(50% - 16px)
+            justify-content: end

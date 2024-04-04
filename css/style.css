@@ -316,13 +316,16 @@ template {
   display: none;
 }
 
-/* Gradientes */
 .bg-gradient-1 {
   background: linear-gradient(225deg, #79dcb4 0%, #128963 100%);
 }
 
 .bg-50 {
   background-color: #eefbf5;
+}
+
+.bg-400 {
+  background-color: #3bc08e;
 }
 
 @keyframes loadingImg {
@@ -342,7 +345,6 @@ template {
   height: 128px;
 }
 
-/* Gradientes */
 .bg-gradient-1 {
   background: linear-gradient(225deg, #79dcb4 0%, #128963 100%);
 }
@@ -351,13 +353,20 @@ template {
   background-color: #eefbf5;
 }
 
-/* Gradientes */
+.bg-400 {
+  background-color: #3bc08e;
+}
+
 .bg-gradient-1 {
   background: linear-gradient(225deg, #79dcb4 0%, #128963 100%);
 }
 
 .bg-50 {
   background-color: #eefbf5;
+}
+
+.bg-400 {
+  background-color: #3bc08e;
 }
 
 @keyframes loadingImg {
@@ -512,7 +521,6 @@ header div.header-container li.close div.cl-1, header div.header-container li.cl
   position: absolute;
 }
 
-/* Gradientes */
 .bg-gradient-1 {
   background: linear-gradient(225deg, #79dcb4 0%, #128963 100%);
 }
@@ -521,13 +529,20 @@ header div.header-container li.close div.cl-1, header div.header-container li.cl
   background-color: #eefbf5;
 }
 
-/* Gradientes */
+.bg-400 {
+  background-color: #3bc08e;
+}
+
 .bg-gradient-1 {
   background: linear-gradient(225deg, #79dcb4 0%, #128963 100%);
 }
 
 .bg-50 {
   background-color: #eefbf5;
+}
+
+.bg-400 {
+  background-color: #3bc08e;
 }
 
 @keyframes loadingImg {
@@ -761,7 +776,45 @@ img {
   flex-direction: column;
   align-items: center;
 }
-/* Gradientes */
+.contact {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.contact .contactForm {
+  width: 100%;
+  margin-bottom: 128px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 940px) {
+  .contact .contactForm {
+    width: calc(50% - 16px);
+    margin-bottom: 0;
+  }
+}
+.contact .contactInfoContainer {
+  width: 100%;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+@media (min-width: 640px) {
+  .contact .contactInfoContainer {
+    padding: 64px;
+  }
+}
+@media (min-width: 940px) {
+  .contact .contactInfoContainer {
+    width: calc(50% - 16px);
+    justify-content: end;
+  }
+}
+
 .bg-gradient-1 {
   background: linear-gradient(225deg, #79dcb4 0%, #128963 100%);
 }
@@ -770,13 +823,20 @@ img {
   background-color: #eefbf5;
 }
 
-/* Gradientes */
+.bg-400 {
+  background-color: #3bc08e;
+}
+
 .bg-gradient-1 {
   background: linear-gradient(225deg, #79dcb4 0%, #128963 100%);
 }
 
 .bg-50 {
   background-color: #eefbf5;
+}
+
+.bg-400 {
+  background-color: #3bc08e;
 }
 
 @keyframes loadingImg {
@@ -790,6 +850,17 @@ img {
     background-position: 0% 0%;
   }
 }
+a {
+  text-decoration: none;
+  color: #3bc08e;
+}
+a:hover {
+  color: #aeecce;
+}
+a.light {
+  color: white;
+}
+
 .button {
   margin-top: 64px;
   padding: 16px 32px;
@@ -811,4 +882,69 @@ img {
 }
 .btn-primary a {
   color: #0f151b;
+}
+
+.btn-submit {
+  width: 100%;
+  background-color: #3bc08e;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  transition: 2s all ease;
+}
+.btn-submit:hover {
+  background-color: #79dcb4;
+  transition: 2s all ease;
+  color: #0e5742;
+}
+
+form {
+  width: 100%;
+}
+form .componentForm {
+  width: 100%;
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+form .componentForm label {
+  margin: 0;
+  padding-left: 32px;
+  position: absolute;
+  top: 8px;
+}
+form .componentForm input {
+  border: none;
+  border-bottom: 1px solid #3bc08e;
+  padding: 8px 32px;
+}
+
+footer {
+  width: 100%;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 640px) {
+  footer {
+    padding: 64px;
+  }
+}
+footer .logo-container {
+  width: 200px;
+  margin-bottom: 32px;
+}
+footer .footerLinks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+footer .footerLinks a {
+  padding: 8px;
+  margin: 8px;
 }/*# sourceMappingURL=style.css.map */
