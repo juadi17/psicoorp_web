@@ -465,7 +465,6 @@ header div.header-container nav.navVertical {
   bottom: 0;
   right: -100%;
   background-color: #e7e7e6;
-  transition: 2s all ease;
 }
 @media (min-width: 640px) {
   header div.header-container nav.navVertical {
@@ -474,7 +473,6 @@ header div.header-container nav.navVertical {
 }
 header div.header-container nav.navVerticalShow {
   right: 0%;
-  transition: 2s all ease;
 }
 header div.header-container nav.navMenu ul {
   margin: 0;
