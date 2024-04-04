@@ -592,6 +592,8 @@ header div.header-container li.close div.cl-1, header div.header-container li.cl
 img {
   width: 100%;
   height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .imgDeco {
@@ -812,6 +814,40 @@ img {
   .contact .contactInfoContainer {
     width: calc(50% - 16px);
     justify-content: end;
+  }
+}
+
+main {
+  width: 100%;
+  flex-direction: column;
+}
+
+.thumbnail {
+  width: 100%;
+  max-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.thumbnail img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.articleHeader .title h1 {
+  font-size: calc(2.5rem + 3vw);
+}
+@media (min-width: 640px) {
+  .articleHeader .title h1 {
+    font-size: calc(2.5rem + 6vw);
+  }
+}
+@media (min-width: 940px) {
+  .articleHeader .title h1 {
+    font-size: calc(2.5rem + 4vw);
   }
 }
 
