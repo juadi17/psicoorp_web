@@ -837,6 +837,20 @@ main {
   object-fit: cover;
 }
 
+.articleHeader .title h1 {
+  font-size: calc(2.5rem + 3vw);
+}
+@media (min-width: 640px) {
+  .articleHeader .title h1 {
+    font-size: calc(2.5rem + 6vw);
+  }
+}
+@media (min-width: 940px) {
+  .articleHeader .title h1 {
+    font-size: calc(2.5rem + 4vw);
+  }
+}
+
 .bg-gradient-1 {
   background: linear-gradient(225deg, #79dcb4 0%, #128963 100%);
 }
